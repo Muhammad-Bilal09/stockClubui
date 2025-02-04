@@ -22,4 +22,5 @@ export type ReportCardProps = {
   altText?: string;
   imageFirst?: boolean;
   className?: string;
+  imageclass?: string;
 };

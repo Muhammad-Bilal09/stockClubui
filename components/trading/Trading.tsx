@@ -12,6 +12,7 @@ function Trading() {
         imageSrc={tradingImage}
         altText="Investor"
         imageFirst={true}
+        imageclass="transition-transform duration-500 scale-110"
         className="custom-style-2 bg-purple"
       />
     </div>

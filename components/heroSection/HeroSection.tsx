@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../button/Button";
 import Image from "next/image";
 import person from "@/public/assets/images/person.svg";
+import Buttons from "@/public/assets/images/Buttons.svg";
 
 function HeroSection() {
   return (
@@ -20,8 +21,17 @@ function HeroSection() {
             </p>
           </div>
           <div>
+            <div className="md:hidden">
+              <Image
+                src={Buttons}
+                alt="Login Button"
+                width={100}
+                height={100}
+                className="rounded-2xl shadow-lg p-8 w-full text-center"
+              />
+            </div>
             <div
-              className="flex items-center justify-center
+              className="max-sm:hidden flex items-center justify-center
             p-4 rounded-2xl"
               style={{
                 backgroundImage: "url('/assets/images/loginbackground.svg')",
@@ -29,7 +39,7 @@ function HeroSection() {
                 backgroundPosition: "start",
               }}
             >
-              <div className="bg-white rounded-2xl shadow-lg p-8 w-full text-center">
+              <div className=" bg-white rounded-2xl shadow-lg p-8 w-full text-center">
                 <h2 className="text-2xl font-bold text-cyan mb-6">
                   Welcome Back
                 </h2>
@@ -63,7 +73,7 @@ function HeroSection() {
                   Don’t have an account?
                   <a
                     href="#"
-                    className="text-cyan-500 font-semibold hover:underline"
+                    className="text-cyan font-semibold hover:underline"
                   >
                     Create One
                   </a>

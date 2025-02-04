@@ -35,29 +35,35 @@ export default function ContactForm() {
           </div>
           <div className="bg-cyan p-8 max-sm:mt-9 rounded-lg shadow-lg w-full md:w-1/2">
             <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-              <div className="flex space-x-2">
+              <div className="max-sm:hidden flex space-x-2">
                 <input
                   type="text"
                   placeholder="First Name"
-                  className="w-1/2 p-3 rounded-lg text-gray-800"
+                  className="w-1/2 p-3 rounded-lg border outline-none text-gray-800"
                   required
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="w-1/2 p-3 rounded-lg text-gray-800"
+                  className="w-1/2 p-3 rounded-lg border outline-none text-gray-800"
                   required
                 />
               </div>
               <input
+                type="text"
+                placeholder="Full Name"
+                className="md:hidden p-3 rounded-lg border outline-none text-gray-800"
+                required
+              />
+              <input
                 type="email"
                 placeholder="Email"
-                className="p-3 rounded-lg text-gray-800"
+                className="p-3 rounded-lg border outline-none text-gray-800"
                 required
               />
               <textarea
                 placeholder="Write a message"
-                className="p-3 rounded-lg text-gray-800 h-24"
+                className="p-3 rounded-lg border outline-none text-gray-800 h-24"
                 required
               />
               <button className="bg-yellow text-white font-semibold px-6 py-3 rounded-lg mt-8">

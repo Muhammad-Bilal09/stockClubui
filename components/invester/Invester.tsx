@@ -12,6 +12,7 @@ function Invester() {
         imageSrc={investorImage}
         altText="Investor"
         imageFirst={false}
+        imageclass="transition-transform duration-500 scale-110"
         className="custom-style-2 bg-yellow"
       />
     </div>
