@@ -20,9 +20,9 @@ export default function ContactForm() {
           backgroundImage: "url('assets/images/contactBackground.svg')",
         }}
       >
-        <div className="text-center p-7">
+        <div className="text-center p-12">
           <h1 className="text-white font-semibold text-2xl">CONTACT US</h1>
-          <p className="text-white">
+          <p className="text-white mt-5">
             We are here to answer any question you might have. We look forward
             to hearing from you!
           </p>
@@ -60,17 +60,15 @@ export default function ContactForm() {
                 className="p-3 rounded-lg text-gray-800 h-24"
                 required
               />
-              <button className="bg-yellow text-gray-900 font-semibold px-6 py-3 rounded-lg mt-8">
-                Submite
+              <button className="bg-yellow text-white font-semibold px-6 py-3 rounded-lg mt-8">
+                Submit
               </button>
             </form>
-            {submitted && (
-              <p className="text-center text-sm mt-4">Thanks for submitting!</p>
-            )}
+            <p className="text-center text-xl mt-9">Thanks for submitting!</p>
           </div>
         </div>
-        <div className="text-center text-white py-2">
-          <h1> &copy; ©2025 by Smartine Inc..</h1>
+        <div className="text-center text-white py-5">
+          <h1 className="pb-1"> &copy;2025 by Smartine Inc.</h1>
           <p>2010 El Camino Real #1349, Santa Clara, CA 95050</p>
         </div>
       </div>

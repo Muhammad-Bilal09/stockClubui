@@ -49,7 +49,7 @@ const SecuritySection = () => {
           </p>
         </div>
       </div>
-      <button className="bg-yellow text-gray-900 font-semibold px-6 py-3 rounded-lg mt-8">
+      <button className="bg-yellow text-white font-semibold px-6 py-3 rounded-lg mt-8">
         Learn More About Security
       </button>
     </div>
